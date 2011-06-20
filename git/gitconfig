@@ -1,0 +1,30 @@
+# ~/.gitconfig
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  tree = log --graph --pretty=oneline
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+
+[user]
+  name = Ming Han Teh
+  email = teh_minghan@hotmail.com
+
