@@ -19,10 +19,11 @@ syntax on
 
 filetype plugin on
 set ofu=syntaxcomplete#Complete
-set history=100
+
+set history=1000
 
 """ NERDCommenter
-let NERDSpaceDelims=1
+" let NERDSpaceDelims=1
 
 """ Highlight text more than 80 chars
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -35,16 +36,13 @@ set nofoldenable
 set foldlevel=1
 
 """ Comment macro
-" let @s='I/* A */'
-" map S @s
-
 map s gcc
 
 set t_Co=256
 
-let g:solarized_termcolors=256
 colorscheme desert
 " colorscheme zenburn
+" let g:solarized_termcolors=256
 " colorscheme solarized
 
 nnoremap <F2> :set invpaste paste?<CR>
