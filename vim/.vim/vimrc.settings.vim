@@ -14,7 +14,6 @@ set laststatus=2
 set ruler
 set hlsearch "highlight searches
 "set noexpandtab
-set cursorline
 
 syntax on
 
@@ -43,7 +42,6 @@ map s gcc
 
 set t_Co=256
 
-set background=dark
 let g:solarized_termcolors=256
 colorscheme desert
 " colorscheme zenburn
@@ -68,14 +66,14 @@ filetype plugin indent on
 
 
 " disable arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>
 
 
 
