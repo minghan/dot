@@ -1,3 +1,8 @@
+" require autoload/pathogen.vim
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+
 """ General Settings
 
 set nocompatible
@@ -72,6 +77,4 @@ filetype plugin indent on
 " imap <down> <nop>
 " imap <left> <nop>
 " imap <right> <nop>
-
-
 
