@@ -1,6 +1,6 @@
-[submodule "vim/.vim/bundle/nerdtree"]
-	path = vim/.vim/bundle/nerdtree
+[submodule "vim/vim.symlink/bundle/nerdtree"]
+	path = vim/vim.symlink/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "vim/.vim/bundle/solarized"]
-	path = vim/.vim/bundle/solarized
+[submodule "vim/vim.symlink/bundle/solarized"]
+	path = vim/vim.symlink/bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
