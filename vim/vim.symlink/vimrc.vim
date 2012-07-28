@@ -1,4 +1,4 @@
-" require autoload/pathogen.vim
+""" require autoload/pathogen.vim
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -18,17 +18,10 @@ set expandtab
 set laststatus=2
 set ruler
 set hlsearch "highlight searches
-"set noexpandtab
-
-syntax on
-
-filetype plugin on
 set ofu=syntaxcomplete#Complete
-
 set history=1000
-
-""" NERDCommenter
-" let NERDSpaceDelims=1
+syntax on
+"set noexpandtab
 
 """ Highlight text more than 80 chars
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -45,8 +38,10 @@ map s gcc
 
 set t_Co=256
 
-colorscheme desert
-" colorscheme zenburn
+" colorscheme gardener
+colorscheme zenburn
+
+""" Solarized
 " let g:solarized_termcolors=256
 " colorscheme solarized
 
@@ -59,16 +54,24 @@ set showmode
 ":imap <C-t> <Esc>:tabnew<CR>
 "nagivating tab: C-PageDown and C-Page
 
+""" NERDCommenter
+" let NERDSpaceDelims=1
+
+""" NERDTree
+let Tlist_Use_Right_Window=1
+
+""" File Type
+
+filetype plugin on
 filetype plugin indent on
-" ~/.vim/after/ftplugin/html.vim
 
-" Alternatively,
-" autocmd FileType html   setlocal shiftwitdh=2 tabstop=2
-" autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType python     setlocal ts=4 sts=4 sw=4
+autocmd FileType jade       setlocal ts=2 sts=2 sw=2
+autocmd FileType html       setlocal ts=2 sts=2 sw=2
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 
 
-
-" disable arrow keys
+""" disable arrow keys
 " map <up> <nop>
 " map <down> <nop>
 " map <left> <nop>
