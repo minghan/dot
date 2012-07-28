@@ -38,8 +38,8 @@ map s gcc
 
 set t_Co=256
 
-" colorscheme gardener
-colorscheme zenburn
+colorscheme gardener
+" colorscheme zenburn
 
 """ Solarized
 " let g:solarized_termcolors=256
