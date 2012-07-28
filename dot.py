@@ -20,12 +20,12 @@ def install():
                 src = os.path.join(dirname, subdirname)
                 dst = os.path.join(HOME, "." + subdirname[:-8])
 
-                if os.path.exists(dst):
-                    print "Folder exists, removing %s" % dst
-                    os.unlink(dst)
-                elif os.path.islink(dst):
+                if os.path.islink(dst):
                     print "Link exists, removing %s" % dst
                     os.unlink(dst)
+                elif os.path.exists(dst):
+                    print "Folder exists, removing %s" % dst
+                    shutil.rmtree(dst)
                     
                 c = c + 1
                 os.symlink(src, dst)
@@ -35,11 +35,11 @@ def install():
             if filename.endswith(".symlink"):
                 src = os.path.join(dirname, filename)
                 dst = os.path.join(HOME, "." + filename[:-8])
-                if os.path.exists(dst):
-                    print "File exists, removing %s" % dst
-                    os.unlink(dst)
-                elif os.path.islink(dst):
+                if os.path.islink(dst):
                     print "Link exists, removing %s" % dst
+                    os.unlink(dst)
+                elif os.path.exists(dst):
+                    print "File exists, removing %s" % dst
                     os.unlink(dst)
                     
                 c = c + 1

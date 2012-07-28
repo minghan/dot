@@ -10,3 +10,6 @@
 [submodule "vim/vim.symlink/bundle/taglist.vim"]
 	path = vim/vim.symlink/bundle/taglist.vim
 	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule "zsh/oh-my-zsh.symlink"]
+	path = zsh/oh-my-zsh.symlink
+	url = git://github.com/minghan/oh-my-zsh.git
