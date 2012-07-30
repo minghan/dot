@@ -5,6 +5,8 @@ import shutil
 
 HOME = os.getenv("HOME")
 
+os.system("git submodule update --init --recursive")
+
 def backup():
     pass
 
