@@ -11,6 +11,3 @@ Concept is based on https://github.com/holman/dotfiles/
 Usage
 -----
 
-
-## sf
-
