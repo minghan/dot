@@ -13,3 +13,6 @@
 [submodule "zsh/oh-my-zsh.symlink"]
 	path = zsh/oh-my-zsh.symlink
 	url = git://github.com/minghan/oh-my-zsh.git
+[submodule "vim/vim.symlink/bundle/tcomment"]
+	path = vim/vim.symlink/bundle/tcomment
+	url = git://github.com/tomtom/tcomment_vim.git
