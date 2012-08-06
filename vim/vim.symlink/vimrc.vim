@@ -1,31 +1,30 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ require autoload/pathogen.vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ General Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible
-
 set number
 set smartindent
 set mouse=a
-
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+"set noexpandtab
 set laststatus=2
 set ruler
 set hlsearch "highlight searches
 set ofu=syntaxcomplete#Complete
 set history=1000
 syntax on
-"set noexpandtab
-
-""" Highlight text more than 80 chars
-" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-" match OverLength /\%81v.\+/
+set t_Co=256
 
 """ Folding
 set foldmethod=indent
@@ -33,10 +32,10 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
-""" Comment macro
-map s gcc
 
-set t_Co=256
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Color Scheme
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 colorscheme gardener
 " colorscheme zenburn
@@ -45,22 +44,9 @@ colorscheme gardener
 " let g:solarized_termcolors=256
 " colorscheme solarized
 
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-set showmode
-
-""" Shortcut for creating tab
-":nmap <C-t> :tabnew<CR>
-":imap <C-t> <Esc>:tabnew<CR>
-"nagivating tab: C-PageDown and C-Page
-
-""" NERDCommenter
-" let NERDSpaceDelims=1
-
-""" NERDTree
-let Tlist_Use_Right_Window=1
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ File Type
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 filetype plugin on
 filetype plugin indent on
@@ -70,6 +56,17 @@ autocmd FileType jade       setlocal ts=2 sts=2 sw=2
 autocmd FileType html       setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""" Mappings to move lines (alt-j/k but esc == alt)
+" nnoremap j :m+<CR>==
+" nnoremap k :m-2<CR>==
+" inoremap j <Esc>:m+<CR>==gi
+" inoremap k <Esc>:m-2<CR>==gi
+" vnoremap j :m'>+<CR>gv=gv
+" vnoremap k :m-2<CR>gv=gv
 
 """ disable arrow keys
 " map <up> <nop>
@@ -80,4 +77,35 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 " imap <down> <nop>
 " imap <left> <nop>
 " imap <right> <nop>
+
+""" Shortcut for creating tab
+":nmap <C-t> :tabnew<CR>
+":imap <C-t> <Esc>:tabnew<CR>
+""" nagivating tab: C-PageDown and C-Page
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Plugin Related
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""" tcomment
+map s gcc
+
+""" NERDTree
+let Tlist_Use_Right_Window=1
+
+""" NERDCommenter
+" let NERDSpaceDelims=1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Fancy Stuff
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
+""" Highlight text more than 80 chars
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/
 
