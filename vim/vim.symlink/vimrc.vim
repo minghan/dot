@@ -1,8 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ require autoload/pathogen.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -48,7 +47,6 @@ colorscheme gardener
 """ File Type
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-filetype plugin on
 filetype plugin indent on
 
 autocmd FileType python     setlocal ts=4 sts=4 sw=4
