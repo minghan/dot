@@ -52,6 +52,7 @@ filetype plugin indent on
 autocmd FileType python     setlocal ts=4 sts=4 sw=4
 autocmd FileType jade       setlocal ts=2 sts=2 sw=2
 autocmd FileType html       setlocal ts=2 sts=2 sw=2
+autocmd FileType css        setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
