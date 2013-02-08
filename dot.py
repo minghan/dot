@@ -17,6 +17,7 @@ def install():
     c = 0
 
     for dirname, dirnames, filenames in os.walk(current_folder):
+        if "/.git" in dirname: continue
         for subdirname in dirnames:
             if subdirname.endswith(".symlink"):
                 src = os.path.join(dirname, subdirname)
