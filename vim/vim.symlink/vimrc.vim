@@ -1,7 +1,16 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" require autoload/pathogen.vim
+""" Vundle and Pathogen
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+" Pathogen - require autoload/pathogen.vim
 call pathogen#infect()
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -52,6 +61,7 @@ filetype plugin indent on
 autocmd FileType python     setlocal ts=4 sts=4 sw=4
 autocmd FileType jade       setlocal ts=2 sts=2 sw=2
 autocmd FileType html       setlocal ts=2 sts=2 sw=2
+autocmd FileType css        setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -82,6 +92,11 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 """ nagivating tab: C-PageDown and C-Page
 
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Vundle
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'tpope/vim-surround'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Plugin Related
