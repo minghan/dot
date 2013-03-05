@@ -9,6 +9,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Pathogen - require autoload/pathogen.vim
+" In Vim, run :BundleInstall, or 
+" for CLI  $ vim +BundleInstall +qall
 call pathogen#infect()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -68,6 +70,8 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 """ Mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" NOTE: <Leader> key is mapped to \ by default
+
 """ Mappings to move lines (alt-j/k but esc == alt)
 " nnoremap j :m+<CR>==
 " nnoremap k :m-2<CR>==
@@ -97,6 +101,11 @@ map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 """ Vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'tpope/vim-surround'
+Bundle 'Lokaltog/vim-easymotion'
+
+" KIV - https://github.com/Valloric/YouCompleteMe
+" Requires Vim 7.3.584
+" Bundle 'Valloric/YouCompleteMe'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Plugin Related
