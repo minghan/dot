@@ -96,6 +96,8 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 """ nagivating tab: C-PageDown and C-Page
 
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <Leader>f :let @/='\<'.expand("<cword>").'\>'\|set hlsearch<C-M>
+map <Leader>h :nohl<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Vundle
